@@ -3,28 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 header a {
-    color: white;
+    color: black;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     /* overflow-x: hidden; */
     /* overflow-x: auto; */
 }
-.header_main_1,.nav_bar_1,.nav_list_addition_1  {
+
+.header_main_1,
+.nav_bar_1,
+.nav_list_addition_1 {
     min-width: 1400px;
 }
+
 body::-webkit-scrollbar {
     width: 8px;
     background-color: #eee;
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: #007ac3;
 }
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #eee;
@@ -48,7 +57,7 @@ body::-webkit-scrollbar-track {
 .nav_bar_back_1 {
     /* content: ""; */
     position: absolute;
-    background-color: black;
+    background-color: white;
     height: 72px;
     width: 100%;
     opacity: 0.4;
@@ -61,17 +70,19 @@ body::-webkit-scrollbar-track {
     width: 100%;
     align-items: center;
     position: absolute;
-    
+
 }
+
 .nav_logo_1 {
-    background : url(../img/logos_header.png) no-repeat bottom ;
+    background: url(../img/logos_header.png) no-repeat top;
     height: 47px;
     width: 124px;
     position: absolute;
-    top:11px;
+    top: 11px;
     left: 62px;
     z-index: 1;
 }
+
 .nav_list_1 {
     height: 100%;
     width: 100%;
@@ -85,6 +96,7 @@ body::-webkit-scrollbar-track {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .nav_list_content_1 {
     position: relative;
     padding: 25px 29px;
@@ -93,18 +105,20 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
     font-weight: 600;
 }
+
 .nav_list_content_1:hover+.nav_list_submenu_1,
 .nav_list_submenu_1:hover,
 .nav_list_content_1:hover>div {
-    display: flex!important;
+    display: flex !important;
 }
-.nav_list_content_1:hover{
-    color: #007ac3!important;
+
+.nav_list_content_1:hover {
+    color: #007ac3 !important;
 }
 .nav_list_content_1>div {
     content: "";
     position: absolute;
-    bottom : 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -114,34 +128,40 @@ body::-webkit-scrollbar-track {
     background-size: auto;
     z-index: 3;
 }
+
+#header_anchor {
+    color: #007dc3;
+}
+
+#header_anchor_underbar {
+    display: flex;
+}
+
 .nav_list_submenu_1 {
     display: none;
     flex-wrap: wrap;
     position: absolute;
     right: 0;
     top: 70px;
-    /* opacity: 1; */
-    /* overflow: hidden; */
-    /* z-index: 1; */
+    overflow: hidden;
     background-color: #f2f2f2;
     border-top: 1px solid #e1e1e1;
     text-align: left;
     border-bottom: 1px solid #e3e4e5;
-
     width: 100%;
-    /* height: 400px; */
 }
 
 .nav_list_summary_1 {
     width: 35%;
-    /* flex: 1 1 35%; */
     background: url(../img/bg_gnb.png) no-repeat left 0px bottom 32px;
 }
+
 .nav_list_summary_1>div {
     width: 315px;
     float: right;
     padding: 0 70px 60px 0;
 }
+
 .nav_list_summary_1>div>h2 {
     margin-top: 60px;
     font-weight: 600;
@@ -149,23 +169,26 @@ body::-webkit-scrollbar-track {
     font-size: 32px;
     line-height: 1;
 }
+
 .nav_list_summary_1>div>p {
     margin-top: 30px;
     font-size: 16px;
     line-height: 1.5;
     word-break: keep-all;
 }
-.nav_list_summary_1>div>div{
+
+.nav_list_summary_1>div>div {
     margin-top: 50px;
 }
+
 .nav_list_summary_1>div>div>a {
     display: block;
     color: #333;
     border-bottom: 1px solid #e3e4e5;
     font-size: 16px;
     padding: 6px 0 4px;
-    /* margin-bottom: 18px; */
 }
+
 .nav_list_menus_1 {
     width: 65%;
     background-color: white;
@@ -175,17 +198,19 @@ body::-webkit-scrollbar-track {
     right: 0;
     display: flex;
 }
+
 .nav_side_1>div:nth-child(1) {
     width: 71px;
     height: 33px;
     margin-top: 19px;
 }
+
 .nav_side_1>div:nth-child(1)>a {
     position: relative;
     display: inline-block;
     width: 71px;
     height: 33px;
-    background-image : url(../img/icons_gnb.png);
+    background-image: url(../img/icons_gnb.png);
     background-position: left -99px;
     font-size: 15px;
     line-height: 33px;
@@ -196,9 +221,11 @@ body::-webkit-scrollbar-track {
 .nav_side_1>div:nth-child(1)>a:hover+ul {
     display: block;
 }
+
 .nav_side_1>div:nth-child(1)>a:hover::after {
     display: inline;
 }
+
 .nav_side_1>div:nth-child(1)>a::after {
     position: absolute;
     content: "KO";
@@ -231,10 +258,12 @@ body::-webkit-scrollbar-track {
     color: #666;
     font-weight: 500;
 }
+
 .nav_side_1>div:nth-child(2) {
     margin-left: 13px;
     position: relative;
 }
+
 .nav_side_1>div:nth-child(2)>a {
     display: inline-block;
     width: 60px;
@@ -242,6 +271,7 @@ body::-webkit-scrollbar-track {
     line-height: 72px;
     text-align: center;
 }
+
 .nav_side_1>div:nth-child(2)>a>span {
     display: inline-block;
     overflow: hidden;
@@ -251,7 +281,7 @@ body::-webkit-scrollbar-track {
     text-indent: -9999em;
     background-image: url(../img/icons_gnb.png);
     background-repeat: no-repeat;
-    background-position: left -33px;
+    background-position: left 0px;
     vertical-align: middle;
 }
 
@@ -276,7 +306,7 @@ body::-webkit-scrollbar-track {
     text-indent: -9999em;
     background-image: url(../img/icons_gnb.png);
     background-repeat: no-repeat;
-    background-position: right -33px;
+    background-position: right 0px;
     vertical-align: middle;
 }
 
@@ -286,6 +316,7 @@ body::-webkit-scrollbar-track {
     width: 176px;
     height: 71px;
 }
+
 .nav_side_1>div:nth-child(4)>a {
     display: block;
     width: 176px;
@@ -300,49 +331,4 @@ body::-webkit-scrollbar-track {
     box-sizing: border-box;
     background-color: #027ac4;
 }
-/* header_main====================== */
-.header_main_1 {
-    position: relative;
-    height: 800px;
-    width: 100%;
-    z-index: -2;
-}
-.header_main_text_1 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-}
-.header_main_text_1>span {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    line-height: 1em;
-    z-index: -2;
-}
-.header_main_text_1>span>span {
-    font-size: 15px;
-    text-decoration: underline;
-}
-.header_main_text_1::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background: url(../img//cjlogistics_main.jpg) no-repeat center/cover;
-    height: 100%;
-    width: 100%;
-    z-index: -3;
-}
-
 /* main ============================================ */
-
-main{
-    height: 1000px;
-}
